@@ -1,0 +1,28 @@
+## printing  price,availability and sell of products in groceries shop 
+prices = {
+  "banana" : 4,
+  "apple"  : 2,
+  "orange" : 1.5,
+  "pear"   : 3,
+}
+stock = {
+  "banana" : 6,
+  "apple"  : 0,
+  "orange" : 32,
+  "pear"   : 15,
+}
+   
+total = 0
+for price in prices:
+ total=prices[price]*stock[price] +total
+print (total)
+
+## sorting 
+tart_list = [5, 3, 1, 2, 4]
+square_list = []
+
+for i in range  (len(start_list)):
+  square=i **2
+  square_list.append(square)
+square_list.sort()
+print (square_list)
