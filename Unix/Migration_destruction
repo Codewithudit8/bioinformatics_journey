@@ -1,0 +1,31 @@
+Create a file called message.txt in your home directory and move it into another directory.
+
+Copy the message.txt you just moved into your home directory.
+
+Delete both copies of message.txt. Try to do this without using rm.
+dell@DESKTOP-RO81QOS:~$ pwd
+/home/dell
+dell@DESKTOP-RO81QOS:~$ ls
+aditya          echo-file3.txtf  file3.txt   temp
+echo-file2.txt  file1            journal     workbanch
+echo-file3.txt  file2.txt        readme.txt  workbench
+dell@DESKTOP-RO81QOS:~$ touch mes.txt
+dell@DESKTOP-RO81QOS:~$ ls
+aditya           file1      mes.txt     workbench
+echo-file2.txt   file2.txt  readme.txt
+echo-file3.txt   file3.txt  temp
+echo-file3.txtf  journal    workbanch
+dell@DESKTOP-RO81QOS:~$ mv mes.txt temp/
+dell@DESKTOP-RO81QOS:~$ cp temp/mes.txt
+cp: missing destination file operand after 'temp/mes.txt'
+Try 'cp --help' for more information.
+dell@DESKTOP-RO81QOS:~$ cp temp/mes.txt.
+cp: missing destination file operand after 'temp/mes.txt.'
+Try 'cp --help' for more information.
+dell@DESKTOP-RO81QOS:~$ cp temp/mes.txt .
+dell@DESKTOP-RO81QOS:~$ unlink mes.txt
+dell@DESKTOP-RO81QOS:~$ unlink temp/mes.txt
+dell@DESKTOP-RO81QOS:~$ ls
+aditya          echo-file3.txtf  file3.txt   temp
+echo-file2.txt  file1            journal     workbanch
+echo-file3.txt  file2.txt        readme.txt  workbench
