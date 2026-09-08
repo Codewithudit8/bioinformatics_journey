@@ -1,0 +1,14 @@
+## couting kmer in a  text and 
+
+# Insert your completed FrequencyMap() function here.
+def FrequencyMap(Text, k):
+    freq = {}
+    n = len(Text)
+    for i in range(n-k+1):
+        Pattern = Text[i:i+k]
+        freq[Pattern] = 0
+    for i in range(n-k+1):
+        Pattern = Text[i:i+k]
+        freq[Pattern]+=1
+    # add another for loop here to range over each k-mer Pattern of text and increase freq[Pattern] by 1 each time
+    return freq
