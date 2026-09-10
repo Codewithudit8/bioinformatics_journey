@@ -1,0 +1,21 @@
+# Input:  A string Text and an integer k
+# Output: A list containing all most frequent k-mers in Text
+def FrequentWords(Text, k):
+    words=[]
+    freq=FrequencyMap(Text,k)
+    m=max(freq.values())
+    for pattern in freq:
+        if freq[pattern]==m:
+            words.append(pattern)
+    return words
+ 
+def FrequencyMap(Text, k):
+    freq={}
+    n=len(Text)
+    for i in range(n-k+1):
+        pattern=Text[i:i+k]
+        freq[pattern]=0
+    for i in range(n-k+1):
+        pattern=Text[i:i+k]
+        freq[pattern]+=1
+    return freq  
