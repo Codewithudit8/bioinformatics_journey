@@ -1,0 +1,11 @@
+# Input:  A DNA string Pattern
+# Output: The complementary string of Pattern (with every nucleotide replaced by its complement).
+def Complement(Pattern):
+    complement_key={"A":"T","T":"A","C":"G","G":"C"}
+    compl=''
+    for i in Pattern:
+        if i in complement_key:
+            compl+=complement_key[i]
+                 
+    return compl
+Pattern="AAAACCCGGT"
