@@ -1,0 +1,9 @@
+def complement(Pattern):
+    compl=[]
+    compl_key={"A":"T","C":"G","T":"A","G":"C"}
+    for i  in Pattern:
+        if i in compl_key:
+            compl.append(compl_key[i])
+    result=''.join(compl)        ## string format main print karna hai usiliye join functionka use hota hai
+    return result    
+print(complement("ATCG"))
