@@ -1,0 +1,10 @@
+## : Write a function PatternMatching() that solves the Pattern Matching Problem. Then add PatternMatching() to Replication.py.
+def PatternMatching(Pattern,Genome):
+    positions=[]
+    n=len(Genome)
+    k=len(Pattern)
+    for i in range(n-k+1):
+        if Genome[i:i+k]==Pattern:
+            positions.append(i)
+    return positions        
+PatternMatching("AAA","AAAGAGTGTCTGATAGCAGCTTCTGAACTGGTTACCTGCCGTGAGTAAATTAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGACAGATAATAATTACAGAGTACACAACATCCAT")
