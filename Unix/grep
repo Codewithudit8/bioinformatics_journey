@@ -1,0 +1,54 @@
+dell@DESKTOP-RO81QOS:~$ grep -iv "a" states.txt >no_a.txt
+dell@DESKTOP-RO81QOS:~$ grep -iv  "e" states.txt > no_e.txt
+dell@DESKTOP-RO81QOS:~$ grep -iv "i" states.txt > no_i.txt
+dell@DESKTOP-RO81QOS:~$ grep -iv "o" states.txt > no_o.txt
+dell@DESKTOP-RO81QOS:~$ grep -iv "u" states.txt > no_u.txt
+dell@DESKTOP-RO81QOS:~$ less no_a.txt
+dell@DESKTOP-RO81QOS:~$ head no_e.txt no_i.txt no_o.txt no_u.txt
+==> no_e.txt <==
+Alabama
+Alaska
+Arizona
+Arkansas
+California
+Colorado
+Florida
+Hawaii
+Idaho
+Illinois
+
+==> no_i.txt <==
+Alabama
+Alaska
+Arkansas
+Colorado
+Delaware
+Kansas
+Kentucky
+Maryland
+Massachusetts
+Montana
+
+==> no_o.txt <==
+Alabama
+Alaska
+Arkansas
+Delaware
+Hawaii
+Indiana
+Kansas
+Kentucky
+Maine
+Maryland
+
+==> no_u.txt <==
+Alabama
+Alaska
+Arizona
+Arkansas
+California
+Colorado
+Delaware
+Florida
+Georgia
+Hawaii
