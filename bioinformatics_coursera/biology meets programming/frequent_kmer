@@ -1,0 +1,25 @@
+# Input:  A string Text and an integer k
+# Output: A list containing all most frequent k-mers in Text
+def FrequentWords(Text, k):
+    words=[]
+    freq=FrequencyMap(Text,k)
+    m=max(freq.values())
+    for pattern in freq:     ## for loop dictionary main  lagane se only key milta hai
+        if freq[pattern]==m:  ## abhi dictionary ka value se compare hoga
+            words.append(pattern)
+    return words
+print(FrequentWords("ACGTTGCATGTCGCATGATGCATGAGAGCT",4))
+    # your code here
+
+# Copy your FrequencyMap() function here.
+def FrequencyMap(Text, k):
+    freq={}
+    n=len(Text)
+    for i in range(n-k+1):
+        pattern=Text[i:i+k]
+        freq[pattern]=0
+    for i in range(n-k+1):
+        pattern=Text[i:i+k]
+        freq[pattern]+=1
+    return freq  
+FrequencyMap("ACGTTGCATGTCGCATGATGCATGAGAGCT",4)
