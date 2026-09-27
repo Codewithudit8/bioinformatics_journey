@@ -1,8 +1,7 @@
 ## reversing a pattern 
 def Reverse(Pattern):
     rev=""
-    for i in Pattern:
-        rev=Pattern[::-1]
+    rev=Pattern[::-1]
     return rev    
 Pattern="atcg"
 print(Reverse(Pattern))
