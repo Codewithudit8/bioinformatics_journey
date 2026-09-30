@@ -1,0 +1,4 @@
+# Example: Dividing numbers with decimal precision (scale defines decimal places)
+echo "scale=2; 22 / 7" | bc
+# Output: 3.14
+echo "expr 10 + 5" > math2.txt
