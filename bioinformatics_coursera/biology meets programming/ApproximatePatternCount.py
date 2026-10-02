@@ -1,0 +1,29 @@
+## Input:  Strings Pattern and Text, and an integer d
+## Output: The number of times Pattern appears in Text with at most d mismatches
+def HammingDistance(p, q):
+    # Yeh function sirf do strings ke beech mismatches ginta hai
+    count = 0
+    for i in range(len(p)):
+        if p[i] != q[i]:
+            count += 1
+    return count
+
+def ApproximatePatternCount(Pattern,Text, d):
+    positions = []
+    k = len(Pattern)
+    n = len(Text)
+    count=0
+    # Text par standard sliding window chalayenge
+    for i in range(n - k + 1):
+        # Current window ka substring nikalenge
+        current_kmer = Text[i:i+k]
+        
+        # Helper function se check karenge ki mismatches 'd' limit ke andar hain ya nahi
+        if HammingDistance(Pattern, current_kmer) <= d: # now work flow will go to the first function and after returning count it will comeback here for compare.
+            count+=1
+    return count
+
+### DO NOT MODIFY THE CODE BELOW THIS LINE ###
+import sys
+lines = sys.stdin.read().splitlines()
+print(ApproximatePatternCount(lines[0],lines[1],int(lines[2])))

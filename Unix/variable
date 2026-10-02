@@ -1,0 +1,82 @@
+dell@DESKTOP-RO81QOS:~$ mkdir current_unix
+dell@DESKTOP-RO81QOS:~$ cd current_unix
+dell@DESKTOP-RO81QOS:~/current_unix$ chapter_number=5
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $chapter_number
+5
+dell@DESKTOP-RO81QOS:~/current_unix$ let chapter_number=$chapter_number+1
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $chapter_number
+6
+dell@DESKTOP-RO81QOS:~/current_unix$ let chapter_number=$chapter_number*2
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $chapter_number
+12
+dell@DESKTOP-RO81QOS:~/current_unix$ string_1="odisha"
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $string_1
+odisha
+dell@DESKTOP-RO81QOS:~/current_unix$ nano math.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ bash math.sh
+7
+expr: syntax error: unexpected argument 'math.sh'
+0
+3.14285714285714285714
+26.20000000000000000000
+(standard_in) 1: syntax error
+(standard_in) 1: syntax error
+dell@DESKTOP-RO81QOS:~/current_unix$ less math.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ nano math.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ bash math.sh
+7
+expr: syntax error: unexpected argument 'math.sh'
+0
+3.14285714285714285714
+26.20000000000000000000
+(standard_in) 1: syntax error
+(standard_in) 1: syntax error
+dell@DESKTOP-RO81QOS:~/current_unix$ nano math.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ bash math.sh
+7
+expr: syntax error: unexpected argument 'math.sh'
+0
+3.14285714285714285714
+26.20000000000000000000
+.69314718055994530941
+2.30258509299404568401
+dell@DESKTOP-RO81QOS:~/current_unix$ pwd
+/home/dell/current_unix
+dell@DESKTOP-RO81QOS:~/current_unix$ mv math.sh /dell/bioinformatics_journey
+mv: cannot move 'math.sh' to '/dell/bioinformatics_journey': No such file or directory
+dell@DESKTOP-RO81QOS:~/current_unix$ math=$(cat math.sh | wc -l)
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $math_lines
+
+dell@DESKTOP-RO81QOS:~/current_unix$ echo $math
+7
+dell@DESKTOP-RO81QOS:~/current_unix$ echo " i went to school in $string_1
+> ^C
+dell@DESKTOP-RO81QOS:~/current_unix$ echo " i went to school in $string_1"
+ i went to school in odisha
+dell@DESKTOP-RO81QOS:~/current_unix$ echo "Script arguments: $@"
+echo "First arg: $1. Second arg: $2."
+echo "Number of arguments: $#"
+Script arguments:
+First arg: . Second arg: .
+Number of arguments: 0
+dell@DESKTOP-RO81QOS:~/current_unix$ echo "script argumetns : $@"
+script argumetns :
+dell@DESKTOP-RO81QOS:~/current_unix$ nano vars.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ bash vars.sh
+Script arguments:
+First arg: . Second arg: .
+vars.sh: line 3: unexpected EOF while looking for matching `"'
+dell@DESKTOP-RO81QOS:~/current_unix$ bash vars.sh red
+Script arguments: red
+First arg: red. Second arg: .
+vars.sh: line 3: unexpected EOF while looking for matching `"'
+dell@DESKTOP-RO81QOS:~/current_unix$ bash vars.sh red blue
+Script arguments: red blue
+First arg: red. Second arg: blue.
+vars.sh: line 3: unexpected EOF while looking for matching `"'
+dell@DESKTOP-RO81QOS:~/current_unix$ less vars.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ nano vars.sh
+dell@DESKTOP-RO81QOS:~/current_unix$ bash vars.sh red blue green
+Script arguments: red blue green
+First arg: red. Second arg: blue.
+Number of arguments: 3
