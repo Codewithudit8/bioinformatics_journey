@@ -1,0 +1,13 @@
+
+dell@DESKTOP-RO81QOS:~/new_lesson$ # ! /bin/bash
+dell@DESKTOP-RO81QOS:~/new_lesson$ mkdir -p my_backup
+dell@DESKTOP-RO81QOS:~/new_lesson$ for i in *.txt
+> do
+> cp "$i" my_backup/
+> echo " files are : $i"
+> done
+ files are : fruit.txt
+ files are : greet.txt
+ files are : item.txt
+ files are : makrs.txt
+ files are : sample.txt
