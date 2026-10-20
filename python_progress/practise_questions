@@ -1,0 +1,25 @@
+## printing censored word in a text with certain words
+
+def censor(text, word):
+    words = text.split()
+    result = ''
+    stars = '*' * len(word)
+    count = 0
+    for i in words:
+        if i == word:
+            words[count] = stars
+        count += 1
+    result =' '.join(words)
+
+    return result
+
+    ## counting same no of repeating item in the list and returning no of repetition
+
+    def count(sequence, item):
+    count = 0
+    for i in sequence:
+        if i == item:
+            count += 1
+    return count
+  
+print count([1, 2, 1, 1], 1)
