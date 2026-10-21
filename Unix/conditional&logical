@@ -1,0 +1,29 @@
+[[ 7 -gt 4 ]]
+echo $?
+[[ 4 -gt 7 ]]
+echo $?
+[[ 7 -gt 4 ]] && echo t
+false || [[ 8 -gt 3 ]] && echo t
+[[ -e conditional.sh ]] && echo t || echo f
+[[ -e dell.sh ]] && echo t || echo f
+
+  true
+echo $?
+false
+echo $?
+
+## logical operator
+true && echo" Program 1 was executed. "
+false && echo "Programme 2 was executed "
+# multiple AND
+
+false && true && echo Hello
+echo 1 && false && echo 3
+echo "ram" && echo "lakhsman " && echo "Hari "
+false || echo "program 2 was executed "
+true || echo "program 2 was executed "
+
+## multiple or operators
+
+echo " Athos "|| echo "paparazi"
+false || echo "sabas beta" && echo "mauj kardi"
