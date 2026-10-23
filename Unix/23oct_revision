@@ -1,0 +1,13 @@
+## metacharacter 
+grep "i.g" states.txt
+grep "*as" states.txt
+grep "s+as" states.txt
+grep "s{2}" states.txt
+grep "(iss){2}" states.txt
+
+## regular expressions
+wc states.txt
+grep 'x' states.txt
+head states.txt
+grep 'q' states.txt
+grep "New' states.txt
