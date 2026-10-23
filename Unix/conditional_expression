@@ -1,0 +1,9 @@
+number=7
+[[ $number -gt 3 ]] && echo t || echo f
+[[ -e $number ]] && echo t || echo f
+[[ number -ge 3 ]] && echo t
+[[ rhythem =~ [aeiou] ]] && echo t || echo f
+my_name=udit
+[[ 7 -ge 3 ]] && echo t || echo f
+[[ ! 7 -ge 3 ]] && echo t || echo f
+[[ $my_name =~ ^u.+t$" ]] && echo t
