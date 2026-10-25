@@ -1,0 +1,16 @@
+  GNU nano 8.7.1            if_and_else.sh
+if [[ $1 -gt  11 ]] && [[ $1 -lt 15 ]]
+then
+  if [[ $1 -lt 13 ]]
+  then
+    echo "twelve"
+  elif [[ $1 -lt 14 ]]
+  then
+    echo "thirteen"
+  else
+    echo "fourtenn"
+  fi
+else
+  echo " you entered : $1, not that i was looking for "
+fi
+
