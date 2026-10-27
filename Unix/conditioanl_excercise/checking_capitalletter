@@ -1,0 +1,5 @@
+string="Long"
+if [[ $string =~ [^A-Z] ]]
+then
+  echo "how proper"
+fi
