@@ -1,0 +1,7 @@
+if [[ $1 && $2  =~ ^[0-9]$ ]]
+then
+  total=$(($1+$2))
+  echo $total
+else
+  echo  $1,$2
+fi
